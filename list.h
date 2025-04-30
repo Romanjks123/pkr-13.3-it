@@ -9,8 +9,7 @@ struct Node {
 
 void addNode(Node*& head, Node*& tail, int value);
 void printList(const Node* head);
-void printListReverse(const Node* tail);
 void deleteList(Node*& head);
-void deleteAfterValue(Node* current, Node*& tail, int target);
+void deleteEachAfterValue(Node*& head, Node*& tail, int target);
 
 #endif

@@ -1,61 +1,60 @@
+// list.cpp
 #include <iostream>
 #include "list.h"
 
+// Рекурсивно додає новий елемент в кінець списку
 void addNode(Node*& head, Node*& tail, int value) {
-    Node* newNode = new Node{ value, nullptr, nullptr };
     if (!head) {
-        head = tail = newNode;
+        head = new Node{ value, nullptr, nullptr };
+        tail = head;
     }
     else {
-        tail->next = newNode;
-        newNode->prev = tail;
-        tail = newNode;
+        addNode(head->next, tail, value);
+        head->next->prev = head;
     }
 }
 
+// Рекурсивно виводить усі значення списку
 void printList(const Node* head) {
-    const Node* current = head;
-    while (current) {
-        std::cout << current->data << " ";
-        current = current->next;
+    if (!head) {
+        std::cout << std::endl;
+        return;
     }
-    std::cout << std::endl;
+    std::cout << head->data << " ";
+    printList(head->next);
 }
 
-void printListReverse(const Node* tail) {
-    const Node* current = tail;
-    while (current) {
-        std::cout << current->data << " ";
-        current = current->prev;
-    }
-    std::cout << std::endl;
-}
-
+// Рекурсивно видаляє весь список
 void deleteList(Node*& head) {
-    while (head) {
-        Node* temp = head;
-        head = head->next;
-        delete temp;
-    }
+    if (!head) return;
+    deleteList(head->next);
+    delete head;
+    head = nullptr;
 }
 
-void deleteAfterValue(Node* current, Node*& tail, int target) {
-    while (current && current->next) {
-        if (current->data == target) {
-            Node* toDelete = current->next;
-            current->next = toDelete->next;
+// Допоміжна функція для рекурсії
+static void deleteAfterRec(Node* current, Node*& tail, int target) {
+    if (!current || !current->next) return;
 
-            if (toDelete->next) {
-                toDelete->next->prev = current;
-            }
-            else {
-                tail = current;
-            }
-
-            delete toDelete;
+    if (current->data == target) {
+        Node* toDelete = current->next;
+        current->next = toDelete->next;
+        if (toDelete->next) {
+            toDelete->next->prev = current;
         }
         else {
-            current = current->next;
+            tail = current;
         }
+        delete toDelete;
+        // Рухаємось далі відразу на наступний вузол
+        deleteAfterRec(current->next, tail, target);
     }
+    else {
+        deleteAfterRec(current->next, tail, target);
+    }
+}
+
+// Інтерфейсна функція — просто викликає рекурсивний обхід
+void deleteEachAfterValue(Node*& head, Node*& tail, int target) {
+    deleteAfterRec(head, tail, target);
 }

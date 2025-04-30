@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{704F7820-7B35-4C44-A683-145D6038E895}|pkr 3.3rec.vcxproj|C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{704F7820-7B35-4C44-A683-145D6038E895}|pkr 3.3rec.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{704F7820-7B35-4C44-A683-145D6038E895}|pkr 3.3rec.vcxproj|C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{704F7820-7B35-4C44-A683-145D6038E895}|pkr 3.3rec.vcxproj|solutionrelative:list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{704F7820-7B35-4C44-A683-145D6038E895}|pkr 3.3rec.vcxproj|C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{704F7820-7B35-4C44-A683-145D6038E895}|pkr 3.3rec.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{704F7820-7B35-4C44-A683-145D6038E895}|pkr 3.3rec.vcxproj|C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -22,30 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\main.cpp*",
-              "RelativeToolTip": "main.cpp*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-16T08:10:09.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "list.cpp",
               "DocumentMoniker": "C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\list.cpp",
               "RelativeDocumentMoniker": "list.cpp",
-              "ToolTip": "C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\list.cpp*",
-              "RelativeToolTip": "list.cpp*",
-              "ViewState": "AgIAABcAAAAAAAAAAAAcwDwAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\list.cpp",
+              "RelativeToolTip": "list.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-16T08:09:58.861Z",
               "EditorCaption": ""
@@ -56,9 +56,9 @@
               "Title": "list.h",
               "DocumentMoniker": "C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\list.h",
               "RelativeDocumentMoniker": "list.h",
-              "ToolTip": "C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\list.h*",
-              "RelativeToolTip": "list.h*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Roman\\Desktop\\pkr\\pkr 3.3rec\\list.h",
+              "RelativeToolTip": "list.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-16T08:09:48.955Z",
               "EditorCaption": ""

@@ -5,27 +5,23 @@ int main() {
     Node* head = nullptr;
     Node* tail = nullptr;
 
-    // Створення списку
+    // You can change these values or input from keyboard
     addNode(head, tail, 1);
     addNode(head, tail, 5);
-    addNode(head, tail, 2);
+    addNode(head, tail, 1);
     addNode(head, tail, 5);
-    addNode(head, tail, 3);
-    addNode(head, tail, 7);
+    addNode(head, tail, 1);
 
-    std::cout << "Початковий список: ";
+    std::cout << "Initial list: ";
     printList(head);
 
-    std::cout << "Список у зворотному порядку: ";
-    printListReverse(tail);
-
     int target;
-    std::cout << "Введіть значення для видалення наступних елементів: ";
+    std::cout << "Enter the target value: ";
     std::cin >> target;
 
-    deleteAfterValue(head, tail, target);
+    deleteEachAfterValue(head, tail, target);
 
-    std::cout << "Змінений список: ";
+    std::cout << "Modified list: ";
     printList(head);
 
     deleteList(head);
